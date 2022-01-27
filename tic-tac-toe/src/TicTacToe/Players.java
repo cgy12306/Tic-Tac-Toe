@@ -1,6 +1,7 @@
 package TicTacToe;
 
 public interface Players {
-    String getName();
-    void play();
+    char getName();
+    void play(Boards board);
+    void setRC(int row, int col);
 }

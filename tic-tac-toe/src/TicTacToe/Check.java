@@ -1,7 +1,8 @@
 package TicTacToe;
 
-public interface Check {
-    public abstract boolean rowWin();
-    public abstract boolean colWin();
-    public abstract boolean diagWin();
+public class Check implements Checks {
+    @Override
+    public boolean Win(Boards board) {
+        return false;
+    }
 }

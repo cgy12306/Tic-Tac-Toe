@@ -1,5 +1,11 @@
 package TicTacToe;
 
+import java.util.List;
+
 public interface Boards {
-    public abstract void boardPrint();
+    int getCnt();
+    String toString();
+    int getSize();
+    char[][] getBoard();
+    boolean totalCheck(Players player, Boards board, List<Checks> checks);
 }
